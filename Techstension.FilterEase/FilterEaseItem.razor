@@ -1,0 +1,32 @@
+﻿@if (Card is null)
+{
+    return;
+}
+
+<section class="filterease-card">
+    <header>
+        @if (!string.IsNullOrWhiteSpace(Card.Image))
+        {
+            <img src="@Card.Image" alt="Card Image">
+        }
+        <h3>@Card.Title</h3>
+        @if (!string.IsNullOrWhiteSpace(Card.SubTitle))
+        {
+            <h4>
+                @Card.SubTitle
+            </h4>
+
+        }
+    </header>
+    <p class="card-description">
+        @Card.Description
+    </p>
+    <ul class="card-data">
+        <li>Width: 300px</li>
+        <li>Height: auto</li>
+    </ul>
+</section>
+
+@code {
+    private string _id = Guid.NewGuid().ToString();
+}

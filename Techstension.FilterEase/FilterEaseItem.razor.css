@@ -1,0 +1,45 @@
+﻿.filterease-card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 1);
+    transition: box-shadow 0.3s ease-in-out;
+    font-size: 24px
+}
+
+    .filterease-card:hover {
+        box-shadow: 0 7px 10px rgba(0, 0, 0, 1);
+    }
+
+    .filterease-card img {
+        width: 100%;
+        aspect-ratio: 2 / 1;
+    }
+
+    .filterease-card header {
+    }
+
+    .filterease-card h3 {
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+
+    .filterease-card h4 {
+        font-size: 1.5rem;
+        margin: 0;
+        opacity:.7
+    }
+
+    .filterease-card p {
+        padding:10px;
+    }
+
+    .filterease-card ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .filterease-card li {
+        text-align: start;
+        list-style: url("https://techstension.com/wp-content/uploads/2024/04/favicon.png");
+    }
