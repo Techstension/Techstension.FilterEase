@@ -3,7 +3,6 @@
     display: flex;
     flex-direction: column;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 1);
-    transition: box-shadow 0.3s ease-in-out;
     font-size: 24px
 }
 
@@ -27,19 +26,54 @@
     .filterease-card h4 {
         font-size: 1.5rem;
         margin: 0;
-        opacity:.7
+        opacity: .7
     }
 
     .filterease-card p {
-        padding:10px;
+        padding: 10px;
     }
 
     .filterease-card ul {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        margin-top: auto;
     }
 
     .filterease-card li {
         text-align: start;
         list-style: url("https://techstension.com/wp-content/uploads/2024/04/favicon.png");
     }
+
+    .filterease-card .call-to-action {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 1rem;
+    }
+
+        .filterease-card .call-to-action a {
+            display: flex;
+            min-height: 5rem;
+            font-size: 1.5rem;
+            justify-content: center;
+            align-items: center;
+            padding: .5rem;
+            text-decoration: none;
+            color: white;
+            transition: box-shadow 0.3s ease-in-out;
+            transition: text-shadow 0.3s ease-in-out;
+        }
+
+            .filterease-card .call-to-action a:hover {
+                box-shadow: 0 7px 10px rgba(0, 0, 0, 1);
+                text-shadow: 0 7px 10px rgba(255, 255, 255, 1);
+            }
+
+        .filterease-card .call-to-action .primary-action {
+            background: #2f855a;
+        }
+
+        .filterease-card .call-to-action .secondary-action {
+            background: #3182ce;
+        }
